@@ -29,6 +29,8 @@ RUN composer install --optimize-autoloader --no-interaction --no-progress
 # Build frontend if package.json exists
 RUN if [ -f package.json ]; then npm install && npm run build; fi
 
+RUN php artisan storage:link
+
 # Permissions
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage \
