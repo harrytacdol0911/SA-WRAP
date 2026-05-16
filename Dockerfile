@@ -35,4 +35,5 @@ RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/bootstrap/cache
 
 EXPOSE 80
+RUN php artisan migrate --force
 CMD php artisan serve --host=0.0.0.0 --port=$PORT
