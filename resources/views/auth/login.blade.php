@@ -35,9 +35,13 @@
                 @enderror
             </div>
 
-            <div class="checkbox-group">
-                <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                <label for="remember">{{ __('Remember Me') }}</label>
+            <!-- Remember Me Checkbox with visible label -->
+            <div class="checkbox-group" style="margin: 15px 0; display: flex; align-items: center; gap: 8px;">
+                <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}
+                       style="width: 18px; height: 18px; cursor: pointer;">
+                <label for="remember" style="color: #333; font-weight: 500; cursor: pointer; margin: 0;">
+                    {{ __('Remember Me') }}
+                </label>
             </div>
 
             <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
@@ -60,12 +64,26 @@
     const passwordInput = document.querySelector('#password');
 
     togglePassword.addEventListener('click', function () {
-        // Toggle the type attribute
         const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
         passwordInput.setAttribute('type', type);
-        // Toggle the eye icon
         this.querySelector('i').classList.toggle('fa-eye');
         this.querySelector('i').classList.toggle('fa-eye-slash');
     });
 </script>
+
+<style>
+    /* Ensure checkbox and label are visible on mobile */
+    @media (max-width: 768px) {
+        .checkbox-group {
+            margin: 20px 0 !important;
+        }
+        .checkbox-group label {
+            font-size: 14px !important;
+        }
+        .checkbox-group input {
+            transform: scale(1.1);
+            margin-right: 5px;
+        }
+    }
+</style>
 @endsection
