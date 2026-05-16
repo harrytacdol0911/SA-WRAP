@@ -35,11 +35,11 @@
                 @enderror
             </div>
 
-            <!-- Remember Me Checkbox with visible label -->
+            <!-- Remember Me Checkbox with yellow label -->
             <div class="checkbox-group" style="margin: 15px 0; display: flex; align-items: center; gap: 8px;">
                 <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}
                        style="width: 18px; height: 18px; cursor: pointer;">
-                <label for="remember" style="color: #333; font-weight: 500; cursor: pointer; margin: 0;">
+                <label for="remember" style="color: #f5b042; font-weight: 500; cursor: pointer; margin: 0;">
                     {{ __('Remember Me') }}
                 </label>
             </div>
@@ -72,7 +72,6 @@
 </script>
 
 <style>
-    /* Ensure checkbox and label are visible on mobile */
     @media (max-width: 768px) {
         .checkbox-group {
             margin: 20px 0 !important;
