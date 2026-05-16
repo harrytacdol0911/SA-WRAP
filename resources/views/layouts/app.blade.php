@@ -6,6 +6,8 @@
     <title>Sa-Wrap – A Pinoy Breakfast Wrap</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Nunito:wght@400;600;700;800;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1">
+    <meta name="google-site-verification" content="ZQ2BTh7tmXOyLsToS987oiA0n1xe_raXSI3sX4HzBBc" />
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
