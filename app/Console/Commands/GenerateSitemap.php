@@ -16,7 +16,7 @@ class GenerateSitemap extends Command
         $this->info('Generating sitemap...');
 
         // Get your app's URL from the .env file.
-        $siteUrl = config('app.url');
+        $siteUrl = 'https://sa-wrap-production.up.railway.app';
 
         // Create the sitemap and save it to the public directory.
         SitemapGenerator::create($siteUrl)
