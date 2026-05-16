@@ -36,5 +36,4 @@ RUN chown -R www-data:www-data /var/www/html \
 
 EXPOSE 80
 RUN php artisan migrate --force
-RUN php artisan storage:link
 CMD php artisan serve --host=0.0.0.0 --port=$PORT
