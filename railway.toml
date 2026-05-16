@@ -1,4 +1,0 @@
-[build]
-[build.nixpacks]
-PHP_VERSION = "8.4"
-NIXPACKS_PHP_VERSION = "8.4"
