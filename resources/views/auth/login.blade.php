@@ -25,7 +25,10 @@
                 <div style="position: relative;">
                     <i class="fas fa-lock" style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: #0f4a2a; font-size: 1rem;"></i>
                     <input id="password" type="password" name="password" placeholder="••••••••" required autocomplete="current-password"
-                           style="padding-left: 40px;">
+                           style="padding-left: 40px; padding-right: 40px;">
+                    <span id="togglePassword" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #888;">
+                        <i class="fas fa-eye"></i>
+                    </span>
                 </div>
                 @error('password')
                     <span class="error-text" role="alert">{{ $message }}</span>
@@ -51,4 +54,18 @@
         </form>
     </div>
 </div>
+
+<script>
+    const togglePassword = document.querySelector('#togglePassword');
+    const passwordInput = document.querySelector('#password');
+
+    togglePassword.addEventListener('click', function () {
+        // Toggle the type attribute
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        // Toggle the eye icon
+        this.querySelector('i').classList.toggle('fa-eye');
+        this.querySelector('i').classList.toggle('fa-eye-slash');
+    });
+</script>
 @endsection
