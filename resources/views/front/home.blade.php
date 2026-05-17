@@ -3,9 +3,9 @@
 @section('content')
 <section class="hero">
     <img src="{{ asset('logo.jpg') }}" alt="Sa-Wrap Logo" class="hero-logo">
-    <span class="hero-tag">🇵🇭 &nbsp;A Pinoy Breakfast Wrap</span>
+    <span class="hero-tag">🇵🇭 &nbsp;A Pinoy Breakfast On-the-go!</span>
     <h1>Not Just a Wrap,<br/>It's <em>SaWrap!</em></h1>
-    <p class="hero-description">Freshly-made herb green wraps packed with your favourite Filipino breakfast fillings — because mornings should be <em>masarap</em>.</p>
+    <p class="hero-description" style="font-size: 20px;">Sa-Wrap offers quick, convenient, and affordable breakfast wraps made for <br> busy mornings, easy to carry, filling, and ready whenever you need <em>a meal on the go.</em>.</p>
     <div class="hero-btns">
         <a href="{{ route('menu') }}" class="btn-primary"><i class="fa-solid fa-bowl-rice"></i> Explore Menu</a>
         <a href="{{ route('about') }}" class="btn-outline"><i class="fa-solid fa-leaf"></i> Our Story</a>
@@ -15,9 +15,9 @@
 <section class="features" style="padding:80px 24px; background:var(--cream)">
     <div class="features-grid">
         <div class="feat-card reveal" style="text-align:center; padding:36px 24px; border-radius:var(--radius); box-shadow:0 4px 20px rgba(0,0,0,0.08)">
-            <div class="feat-icon" style="font-size:2.4rem">🌿</div>
-            <h3 style="font-family:'Playfair Display',serif; color:var(--gold)">Herb Green Tortilla</h3>
-            <p style="color:#c8e6c9">Our signature soft tortilla is infused with fresh herbs for a unique, wholesome taste.</p>
+            <div class="feat-icon" style="font-size:2.4rem">🥞</div>
+            <h3 style="font-family:'Playfair Display',serif; color:var(--gold)">Kangkong Pancake Wrap</h3>
+            <p style="color:#c8e6c9">Our signature soft pancake wrap is infused with fresh kangkong leaves, creating a unique, flavorful, and wholesome twist to your breakfast on the go.</p>
         </div>
         <div class="feat-card reveal" style="text-align:center; padding:36px 24px; border-radius:var(--radius); box-shadow:0 4px 20px rgba(0,0,0,0.08)">
             <div class="feat-icon" style="font-size:2.4rem">🍚</div>

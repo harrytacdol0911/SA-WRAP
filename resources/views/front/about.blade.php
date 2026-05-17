@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="page-hero" style="background: linear-gradient(135deg, #0f4a2a, #0a3a1e); margin: 0; border-radius: 0;">
-    <span class="eyebrow" style="background:var(--gold); color:#0f4a2a; display:inline-block; padding:5px 18px; border-radius:100px;">Our Story</span>
+    <span class="eyebrow" style="background:var(--gold); color:#0f4a2a; display:inline-block; padding:5px 18px; border-radius:100px; font-weight:bold; margin-bottom:15px;">Not Just a Wrap, It's SaWrap!</span>
     <h1 style="font-family:'Playfair Display',serif; color:#fff;">Born from a Love of <em style="color:var(--gold)">Filipino Breakfast</em></h1>
 </div>
 
@@ -12,10 +12,13 @@
             <img src="{{ asset('logo.jpg') }}" alt="Sa-Wrap Story" style="width:100%; height:100%; object-fit:cover">
         </div>
         <div class="belowreveal">
-            <span class="sec-eyebrow" style="background:linear-gradient(90deg,var(--gold),var(--gold-d)); color:#0f4a2a; display:inline-block; padding:5px 16px; border-radius:100px;">How It Started</span>
-            <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.7rem,3vw,2.4rem); color: var(--gold);">A <em style="color: #fff;">Masarap</em> Idea Wrapped in Tradition</h2>
-            <p style="color: #c8e6c9; margin-top:14px; line-height:1.8">Sa-Wrap was born from a simple question: <em>"What if our favourite Filipino breakfast could travel with us?"</em> We took the beloved silog experience — the sizzling tocino, the crispy bangus, the fragrant longganisa — and wrapped it all up in a fresh, herb-infused green tortilla.</p>
-            <p style="margin-top:12px; color: #c8e6c9;">From our humble beginning as a home-based kitchen, we've grown into a community favourite — serving warm, hearty wraps to students, workers, and families who want a taste of home, even on the busiest mornings.</p>
+            <span class="sec-eyebrow" style="background:linear-gradient(90deg,var(--gold),var(--gold-d)); color:#0f4a2a; display:inline-block; padding:5px 16px; border-radius:100px; font-weight:bold;">How It Started</span>
+            <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.7rem,3vw,2.4rem); color: var(--gold);">A <em style="color: #fff;">Filipino </em> Breakfast On-the-go!</h2>
+            <p style="color: #c8e6c9; margin-top:14px; line-height:1.8">SaWrap is a student-operated food business established in 2026. <em>The business offers a unique and convenient breakfast-on-the-go product that combines traditional Filipino flavors in a modern wrap format.</em> Using a soft pancake as the base, each wrap is filled with egg fried rice, cheese sauce, and a choice of Filipino dishes, creating a satisfying and portable meal ideal for busy individuals.</p>
+            <!-- <p style="margin-top:12px; color: #c8e6c9;">Seeing this common problem inspired the creation of Sa-Wrap, a convenient breakfast-on-the-go meal that is affordable, filling, and enjoyable. By combining creative flavors with quality ingredients, Sa-Wrap was built to provide a quick breakfast option without sacrificing taste or nutrition.</p> -->
+            <!-- <p style="margin-top:12px; color: #c8e6c9;">From a simple idea inside a school campus, Sa-Wrap continues to grow with the vision of expanding its menu and bringing convenient breakfast options to more communities in the future.</p> -->
+
+
         </div>
     </div>
 </section>
